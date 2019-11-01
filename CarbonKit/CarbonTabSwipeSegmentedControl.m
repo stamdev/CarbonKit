@@ -129,6 +129,10 @@
     [self setNeedsDisplay];
 }
 
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    return true;
+}
+
 - (void)setTitleTextAttributes:(NSDictionary *)attributes forState:(UIControlState)state {
     [super setTitleTextAttributes:attributes forState:state];
 
